@@ -1,0 +1,27 @@
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+
+  <% include partials/header.ejs %>
+
+  <h2 style="color: gold; padding-top:50px;padding-bottom: 100px;"><%= title %> Page</h2>
+  
+  <% if(title == "Home"){ %>
+    <%-include partials/home.ejs %>
+  <% } %>
+
+  <% if(title == "Projects"){ %>
+    <%-include partials/projects.ejs %>
+  <% } %>
+
+  <% if(title == "About Me"){ %>
+    <%-include partials/about.ejs %>
+  <% } %>
+
+  <% if(title == "Services"){ %>
+    <%-include partials/services.ejs %>
+  <% } %>
+
+  <% if(title == "Contact Me"){ %>
+    <%-include partials/contact.ejs %>
+  <% } %>
+  
+  <% include partials/footer.ejs %>
